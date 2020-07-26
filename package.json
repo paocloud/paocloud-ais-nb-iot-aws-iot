@@ -1,0 +1,27 @@
+{
+  "name": "aws-iot-publish-mqtt",
+  "version": "1.0.0",
+  "description": "aws-iot-publish-mqtt",
+  "main": "publish.js",
+  "scripts": {
+    "start": "npm run build && node build/index.js",
+    "build": "rimraf ./build && tsc",
+    "start:dev": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "PaOv6.",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^14.0.5",
+    "nodemon": "^2.0.4",
+    "rimraf": "^3.0.2",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.3"
+  },
+  "dependencies": {
+    "@types/aws-iot-device-sdk": "^2.2.2",
+    "aws-iot-device-sdk": "^2.2.6",
+    "dgram": "^1.0.1"
+  }
+}
